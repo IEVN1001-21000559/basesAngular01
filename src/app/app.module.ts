@@ -16,3 +16,7 @@ import { AppComponent } from './app.component';
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+
+
+
+//Este archivo es donde se crean los modulos centrales para declararlos aqui en el global
