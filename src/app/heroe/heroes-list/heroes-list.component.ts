@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Iheroes } from '../../heroes/iheroes';
+
 
 @Component({
   selector: 'app-heroes-list',
@@ -11,8 +13,13 @@ export class HeroesListComponent {
   imageWidth:number=40;
   imageMargin:number=2;
   muestraImage:boolean=true;
+  listFilter: string='';
 
-  heroes:any[]=[
+  showImage():void{
+    this.muestraImage=!this.muestraImage;
+  }
+
+  heroes:Iheroes[]=[
     {
       imagen:"https://dragonball-api.com/characters/goku_normal.webp",
       nombre:"Goku",
@@ -28,14 +35,14 @@ export class HeroesListComponent {
       ki:8500
     },
     {
-      "imagen":"https://dragonball-api.com/characters/picolo_normal.webp",
+      imagen:"https://dragonball-api.com/characters/picolo_normal.webp",
        nombre:"Piccolo",
        description:"Makankosappo",
        race:"Namekiano",
        ki:7000
     },
     {
-      "imagen":"https://dragonball-api.com/characters/Freezer.webp",
+      imagen:"https://dragonball-api.com/characters/Freezer.webp",
        nombre:"Freezer",
        description:"Death Ball",
        race:"Alien",
