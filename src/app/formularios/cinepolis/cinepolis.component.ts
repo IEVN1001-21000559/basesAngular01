@@ -7,25 +7,25 @@ import { Component } from '@angular/core';
   styleUrl: './cinepolis.component.css'
 })
 export class CinepolisComponent {
-  // Input variables linked to the HTML form
+  //
   nombre: string = '';
   cantidadCompradores: number = 0;
   tieneTarjeta: boolean = false;
   cantidadBoletos: number = 0;
 
-  // Output variable for the calculated price
+  //
   valorPagar: number = 0;
 
   constructor() { }
 
 
   procesar(): void {
-    const precioBoleto: number = 12;
-    const maxBoletosPorPersona: number = 7;
+    const precioBoleto: number = 12;//Aqui el precio del boleto que son $12
+    const maxBoletosPorPersona: number = 7; //en esta variable damos los valores maximos de boletos
 
 
     if (this.cantidadBoletos > this.cantidadCompradores * maxBoletosPorPersona) {
-      alert(`Each person can buy a maximum of ${maxBoletosPorPersona} tickets. Please review your order.`);
+      alert(`cada persona puede comprar un maximo de ${maxBoletosPorPersona} boletos. por favor revisa tu orden.`);
       this.valorPagar = 0;
       return;
     }
@@ -49,7 +49,7 @@ export class CinepolisComponent {
     this.valorPagar = costoTotal;
   }
 
-  
+
   salir(): void {
     this.nombre = '';
     this.cantidadCompradores = 0;

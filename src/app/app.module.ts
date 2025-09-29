@@ -1,13 +1,16 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms'; // <-- 1. Importa FormsModule
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeroesListComponent } from './heroe/heroes-list/heroes-list.component';
-import { FormsModule } from '@angular/forms';
 import { HeroesFilterPipe } from './heroes/heroes-filter.pipe';
 import { OperasBasComponent } from './formularios/operas-bas/operas-bas.component';
 import { CinepolisComponent } from './formularios/cinepolis/cinepolis.component';
+//no funciona boton calcular
+import { ResistenciasComponent } from './formularios/resistencias/resistencias.component';
+
 
 @NgModule({
   declarations: [
@@ -15,7 +18,8 @@ import { CinepolisComponent } from './formularios/cinepolis/cinepolis.component'
     HeroesListComponent,
     HeroesFilterPipe,
     OperasBasComponent,
-    CinepolisComponent
+    CinepolisComponent,
+    ResistenciasComponent,
   ],
 
   imports: [
@@ -23,7 +27,7 @@ import { CinepolisComponent } from './formularios/cinepolis/cinepolis.component'
     AppRoutingModule,
     FormsModule
   ],
-  
+
   providers: [],
   bootstrap: [AppComponent]
 })

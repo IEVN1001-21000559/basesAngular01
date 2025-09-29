@@ -1,0 +1,15 @@
+/* Estilos para los colores de las bandas de resistencia */
+.bg-negro { background-color: black; color: white; }
+.bg-cafe { background-color: brown; color: white; }
+.bg-rojo { background-color: red; color: white; }
+.bg-naranja { background-color: orange; color: black; }
+.bg-amarillo { background-color: yellow; color: black; }
+.bg-verde { background-color: green; color: white; }
+.bg-azul { background-color: blue; color: white; }
+.bg-violeta { background-color: purple; color: white; }
+.bg-gris { background-color: gray; color: black; }
+.bg-blanco { background-color: white; color: black; }
+
+/* Estilos para los colores de la tolerancia */
+.bg-dorado { background-color: gold; color: black; }
+.bg-plata { background-color: silver; color: black; }

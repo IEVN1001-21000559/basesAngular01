@@ -6,7 +6,7 @@ import { Component } from '@angular/core'; //Importa la clase base 'component' d
   templateUrl: './operas-bas.component.html', //Ruta al archivo HTML que define la interfaz de usuario
   styleUrl: './operas-bas.component.css' //Ruta al archivo CSS para estilos del componente.
 })
-export class OperasBasComponent { //Define la clase que contiene la lógica del componente.
+export class OperasBasComponent { //esto define la clase que contiene la lógica del componente.
   num1: string = '';
   num2: string = '';
   resultado: number = 0;
@@ -40,6 +40,6 @@ export class OperasBasComponent { //Define la clase que contiene la lógica del 
       default:
         this.resultado = 0;
         break;
-    }
+    -}
   }
 }
