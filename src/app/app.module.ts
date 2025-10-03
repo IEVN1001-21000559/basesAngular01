@@ -8,8 +8,8 @@ import { HeroesListComponent } from './heroe/heroes-list/heroes-list.component';
 import { HeroesFilterPipe } from './heroes/heroes-filter.pipe';
 import { OperasBasComponent } from './formularios/operas-bas/operas-bas.component';
 import { CinepolisComponent } from './formularios/cinepolis/cinepolis.component';
-//no funciona boton calcular
 import { ResistenciasComponent } from './formularios/resistencias/resistencias.component';
+import { DistanciaComponent } from './formularios/distancia/distancia.component';
 
 
 @NgModule({
@@ -20,6 +20,7 @@ import { ResistenciasComponent } from './formularios/resistencias/resistencias.c
     OperasBasComponent,
     CinepolisComponent,
     ResistenciasComponent,
+    DistanciaComponent,
   ],
 
   imports: [

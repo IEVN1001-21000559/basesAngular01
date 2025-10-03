@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { OperacionesResistencias } from './operacionesResistencias';
+import { OperacionesResistencias } from './operacionesResistencias'; //esta es mi clase de operaciones
 
 @Component({
   selector: 'app-resistencias',  //Esta etiqueta se usa en otro archivo para mostrar este componente en la web

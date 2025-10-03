@@ -1,0 +1,30 @@
+<div class="container mt-5">
+  <div class="row justify-content-center">
+    <div class="col-md-6">
+      <div class="card p-4">
+        <h3 class="mb-4 text-center">Distancia entre dos puntos</h3>
+
+        <div class="mb-3">
+          <label for="x1" class="form-label">x1:</label>
+          <input type="number" class="form-control" id="x1" [(ngModel)]="x1">
+        </div>
+        <div class="mb-3">
+          <label for="y1" class="form-label">y1:</label>
+          <input type="number" class="form-control" id="y1" [(ngModel)]="y1">
+        </div>
+        <div class="mb-3">
+          <label for="x2" class="form-label">x2:</label>
+          <input type="number" class="form-control" id="x2" [(ngModel)]="x2">
+        </div>
+        <div class="mb-3">
+          <label for="y2" class="form-label">y2:</label>
+          <input type="number" class="form-control" id="y2" [(ngModel)]="y2">
+        </div>
+
+        <button class="btn btn-primary mt-10" (click)="calcular()">calculo</button>
+
+        <h4 class="mt-4">La distancia entre los dos puntos es: {{ distancia | number:'1.2-2' }}</h4>
+      </div>
+    </div>
+  </div>
+</div>

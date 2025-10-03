@@ -40,6 +40,6 @@ export class OperasBasComponent { //esto define la clase que contiene la lógica
       default:
         this.resultado = 0;
         break;
-    -}
+    }
   }
 }
